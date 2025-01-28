@@ -1,0 +1,91 @@
+@import "../../styles/Variable.module.scss";
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.paginationClassName,
+.paginationLight {
+  border-radius: 4px;
+  background-color: $primary-black;
+  border: none;
+
+  &.ant-pagination-item-active {
+    background-color: $secondary-black;
+    border: none;
+  }
+
+  &.ant-pagination-item-active a {
+    background-color: black;
+    color: $primary-light-gray;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  a {
+    background-color: $secondary-black;
+    color: $primary-light-gray;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 4px;
+    border: none;
+
+    &:hover {
+      color: $primary-light-gray;
+    }
+  }
+  svg {
+    color: $primary-light-gray;
+  }
+}
+
+.paginationLight {
+  background-color: white;
+  line-height: 32px;
+  li a {
+    background-color: $primary-white;
+  }
+
+  &.ant-pagination-item-active {
+    background-color: $secondary-white;
+    border: none;
+  }
+
+  &.ant-pagination-item-active a {
+    background-color: white;
+    color: $primary-light-gray;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  a {
+    background-color: white;
+    color: $primary-light-gray;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 4px;
+    border: none;
+
+    &:hover {
+      color: $primary-light-gray;
+    }
+  }
+  svg {
+    color: $primary-dark-gray;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .all {
+    height: 24px;
+    margin-bottom: 20px;
+  }
+}
